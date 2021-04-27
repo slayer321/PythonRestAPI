@@ -16,6 +16,13 @@ for i in range(len(data)):
 
 
 input()
+
+
+response = requests.get(
+    BASE + "/video/1")
+print(response.json())
+
+input()
 response = requests.patch(
     BASE + "/video/2", {"views": 123213213})
 print(response.json())
