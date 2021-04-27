@@ -18,6 +18,8 @@ for i in range(len(data)):
 input()
 
 
+# call one verb at a time
+
 response = requests.get(
     BASE + "/video/1")
 print(response.json())
